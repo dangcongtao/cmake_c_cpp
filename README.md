@@ -8,7 +8,7 @@
 
 # Ex2: cmake with many folders:
 ├── build
-├── CMakeLists.txt
+|    └── CMakeLists.txt
 ├── include
 │   └── Student.h
 └── src
