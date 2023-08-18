@@ -11,6 +11,6 @@
 |    └── CMakeLists.txt
 ├── include
 │   └── Student.h
-└── src
-    ├── mainapp.cpp
-    └── Student.cpp
+├── src
+|    └── Student.cpp
+└── mainapp.cpp

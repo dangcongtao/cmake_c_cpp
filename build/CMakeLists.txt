@@ -9,5 +9,10 @@ include_directories(../include)
 # add src file, need to test with another directory forms
 file(GLOB SOURCES "../src/*.c")
 
-# add exect file
-add_executable(ex2 ${SOURCES})
+# add shared lib 
+add_library(ex2_lib ${SOURCES})
+
+add_executable(ex2 ../main.c)
+
+# link lib and exec file
+target_link_libraries(ex2 ex2_lib)
