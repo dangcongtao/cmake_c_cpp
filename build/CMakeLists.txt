@@ -4,13 +4,17 @@ cmake_minimum_required(VERSION 3.22.1)
 project(ex2)
 
 # add include dir
-include_directories(../include)
+include_directories(
+    ../module1
+    ../module1/module2)
 
 # add src file, need to test with another directory forms
-file(GLOB SOURCES "../src/*.c")
+file(GLOB MODULE1 
+    "../module1/*.c" 
+    "../module1/module2/*.c")
 
 # add shared lib 
-add_library(ex2_lib ${SOURCES})
+add_library(ex2_lib ${MODULE1})
 
 add_executable(ex2 ../main.c)
 
