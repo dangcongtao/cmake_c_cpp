@@ -20,9 +20,11 @@
 |   └──CMakeLists.txt
 ├── proc1
 |   ├── main_proc1.c `run file 1`
-|   ├── proc1.c
-│   └── proc1.h
+|   └── module
+|       ├── proc1.c
+│       └── proc1.h
 └── proc2
     ├── main_proc2.c `run file 2`
-    ├── proc2.c
-    └── proc2.h
+    └── module
+       ├── proc2.c
+       └── proc2.h
